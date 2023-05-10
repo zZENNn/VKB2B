@@ -6,5 +6,6 @@ form.onsubmit = (event)=>{
     let formDataObject = Object.fromEntries(formData.entries());
     let formDataJsonString = JSON.stringify(formDataObject);
   console.log(formDataJsonString)
+  form.reset()
 }
 
