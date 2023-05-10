@@ -31,7 +31,8 @@ h1{
 }
 
 .datetimeRows{
-    margin-bottom: 5%;
+    margin: 1% 0;
+    
 }
 
 #upperFields{
@@ -50,11 +51,14 @@ h1{
 #dateTime{
     display: flex;
     flex-direction: column;
+    
 }
+
 
 
 textarea{
     width: 100%;
     max-width: 463px;
+    margin-top: 0.2%;
     
 }
