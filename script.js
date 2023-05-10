@@ -5,9 +5,10 @@ const endTime = document.getElementById("endTime")
 
 form.onsubmit = (event)=>{
     event.preventDefault()
+
     let inputs = document.getElementsByClassName("field")
-    
     let validity = true
+    
     for(let i = 0;i<inputs.length;i++){
             if(inputs[i].value == ""){
                 inputs[i].classList.add("invalid")
@@ -17,9 +18,7 @@ form.onsubmit = (event)=>{
                 inputs[i].classList.remove("invalid")
                 
                 
-            }
-           
-        
+            }  
     }
     if(startTime.value>endTime.value&&startTime.value!=""&&endTime.value!=""){
         startTime.classList.add("invalid")
