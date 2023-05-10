@@ -15,7 +15,7 @@
             <form id="form" >
                 <div class="block" id="upperFields">
                     <div class="select">
-                        <label for="tower">Башня
+                        <label for="tower" id="labelTower">Башня
                             <select name="tower">
                                 <option value="A">A</option>
                                 <option value="Б">Б</option>
@@ -23,7 +23,7 @@
                         </label>
                     </div>
                     <div class="select">
-                        <label for="storey">Этаж
+                        <label for="storey" id="labelStorey">Этаж
                             <select name="storey" id = "selectStorey">
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -54,7 +54,7 @@
                         </label>
                     </div>
                     <div class="select">
-                        <label for="room">Комната
+                        <label for="room" id="labelRoom">Комната
                             <select name="room">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -71,13 +71,19 @@
                     </div>
                 </div>
                 <div class="block" id="dateTime">
-                    <label >Дата и время бронирования</label>
-                    <label class="datetimeRows">с&nbsp;&nbsp; <input type="datetime-local" id="startTime" name="startTime"></label>
-                    <label class="datetimeRows">до <input type="datetime-local" id="endTime" name="endTime">         
-                    </label>
+                    <label id="labelDateTime">Дата и время бронирования</label>
+                    <div class="timeWrapper">
+                        <div id="c"><label class="datetimeRows" for="startTime" id="labelStartTime">с </label></div>
+                        <div><input type="datetime-local" id="startTime" name="startTime"></div>
+                    </div>
+                    <div class="timeWrapper">
+                        <div><label class="datetimeRows" for="endTime" id="labelEndTime">до</label></div>
+                        <div><input type="datetime-local" id="endTime" name="endTime"></div>   
+                    </div>    
+                    
                 </div>
                 <div class="block" id="comment">
-                    <label for="commentTextArea">Комментарий:</label><br>
+                    <label for="commentTextArea" id="labelComment">Комментарий:</label><br>
                     <textarea name="commentTextArea" cols="80" rows="10"></textarea>
                     
                 </div>

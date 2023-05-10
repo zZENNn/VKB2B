@@ -5,11 +5,13 @@
 html{
     font-family: Inter;
     scroll-behavior: unset;
+    
 }
 h1{
     font-family: Inter;
     font-weight: 600;
     font-size: 24px;
+    color: #4593EC;
    
 }
 .container{
@@ -30,9 +32,8 @@ h1{
     margin-bottom: 5%;
 }
 
-.datetimeRows{
-    margin: 1% 0;
-    
+#c{
+    padding-right: 1ch;
 }
 
 .btn{
@@ -99,8 +100,43 @@ h1{
 
 textarea{
     width: 100%;
-    max-width: 463px;
+    max-width: 455px;
     margin-top: 0.2%;
     
 }
 
+.timeWrapper{
+    display: flex;
+    flex-direction: row;
+    max-width: 40%;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+#labelDateTime{
+    color: #4593EC;
+}
+
+#labelComment{
+    color: #4593EC;
+}
+
+#labelTower{
+    font-weight: bold;
+}
+
+#labelStorey{
+    font-weight: bold;
+}
+
+#labelRoom{
+    font-weight: bold;
+}
+
+#labelStartTime{
+    font-weight: bold;
+}
+
+#labelEndTime{
+    font-weight: bold;
+}
