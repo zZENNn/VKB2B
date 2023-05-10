@@ -35,6 +35,44 @@ h1{
     
 }
 
+.btn{
+    width: 40%;
+    height: 5vh;
+    border-radius: 6px;
+    cursor: pointer;
+    
+}
+
+#btnSend{
+    border: 2px solid transparent;
+    background-color:#4593EC;
+    color: white;
+}
+
+#btnSend:hover{
+    background-color:#4593ece6;
+}
+
+
+
+
+#btnReset{
+    border: 2px solid #4593EC;
+    background-color: white;
+    color: #4593EC;
+}
+
+#btnReset:hover{
+    border: 2px solid #4593ece6;
+    color: #4593ece6;
+}
+
+#buttonRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 #upperFields{
     display: flex;
     flex-direction: row;
@@ -54,7 +92,9 @@ h1{
     
 }
 
-
+#selectStorey{
+    max-height: 20vh;
+}
 
 textarea{
     width: 100%;
@@ -62,3 +102,4 @@ textarea{
     margin-top: 0.2%;
     
 }
+

@@ -12,19 +12,19 @@
         
         <div class="form">
             <h1>Бронирование переговорной комнаты</h1>
-            <form action="">
+            <form id="form" >
                 <div class="block" id="upperFields">
                     <div class="select">
                         <label for="tower">Башня
                             <select name="tower">
                                 <option value="A">A</option>
-                                <option value="B">Б</option>
+                                <option value="Б">Б</option>
                             </select>
                         </label>
                     </div>
                     <div class="select">
                         <label for="storey">Этаж
-                            <select name="tower">
+                            <select name="storey" id = "selectStorey">
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
@@ -72,8 +72,8 @@
                 </div>
                 <div class="block" id="dateTime">
                     <label >Дата и время бронирования</label>
-                    <label class="datetimeRows">с&nbsp;&nbsp; <input type="datetime-local" id="startTime"></label>
-                    <label class="datetimeRows">до <input type="datetime-local" id="endTime">         
+                    <label class="datetimeRows">с&nbsp;&nbsp; <input type="datetime-local" id="startTime" name="startTime"></label>
+                    <label class="datetimeRows">до <input type="datetime-local" id="endTime" name="endTime">         
                     </label>
                 </div>
                 <div class="block" id="comment">
@@ -82,10 +82,11 @@
                     
                 </div>
                 <div class="block" id="buttonRow">
-                    <button>Отправить</button><button>Очистить</button>
+                    <input type="submit" class="btn" id="btnSend" value="Отправить"><input class="btn" id ="btnReset" type="reset" value="Очистить">
                 </div>
             </form>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
