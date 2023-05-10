@@ -2,7 +2,10 @@
     font-family: Inter;
     src: url(./Inter-VariableFont_slnt\,wght.ttf);
 }
-
+html{
+    font-family: Inter;
+    scroll-behavior: unset;
+}
 h1{
     font-family: Inter;
     font-weight: 600;
@@ -23,7 +26,15 @@ h1{
     justify-content: space-evenly;
 }
 
-.upperFields{
+.block{
+    margin-bottom: 5%;
+}
+
+.datetimeRows{
+    margin-bottom: 5%;
+}
+
+#upperFields{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -36,7 +47,7 @@ h1{
     
 }
 
-.dateTime{
+#dateTime{
     display: flex;
     flex-direction: column;
 }

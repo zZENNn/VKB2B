@@ -13,7 +13,7 @@
         <div class="form">
             <h1>Бронирование переговорной комнаты</h1>
             <form action="">
-                <div class="upperFields">
+                <div class="block" id="upperFields">
                     <div class="select">
                         <label for="tower">Башня
                             <select name="tower">
@@ -70,18 +70,18 @@
                         </label>
                     </div>
                 </div>
-                <div class="dateTime">
-                    <label>Дата и время бронирования</label>
-                    <label>c   <input type="datetime-local" id="startTime"></label>
-                    <label>до  <input type="datetime-local" id="endTime">         
+                <div class="block" id="dateTime">
+                    <label class="datetimeRows">Дата и время бронирования</label>
+                    <label class="datetimeRows">c   <input type="datetime-local" id="startTime"></label>
+                    <label class="datetimeRows">до  <input type="datetime-local" id="endTime">         
                     </label>
                 </div>
-                <div class="comment">
+                <div class="block" id="comment">
                     <label for="commentTextArea">Комментарий</label><br>
                     <textarea name="commentTextArea" cols="80" rows="10"></textarea>
                     
                 </div>
-                <div class="buttonRow">
+                <div class="block" id="buttonRow">
                     <button>Отправить</button><button>Очистить</button>
                 </div>
             </form>
