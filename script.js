@@ -1,14 +1,12 @@
 const form = document.getElementById("form")
 const timeAlert = document.getElementById("timeAlert")
 const startTime = document.getElementById("startTime")
-
 const endTime = document.getElementById("endTime")
-// console.log(form)
 
 form.onsubmit = (event)=>{
     event.preventDefault()
     let inputs = document.getElementsByClassName("field")
-    // console.log(inputs)
+    
     let validity = true
     for(let i = 0;i<inputs.length;i++){
             if(inputs[i].value == ""){
@@ -32,7 +30,7 @@ form.onsubmit = (event)=>{
     else{
         timeAlert.style.display = "none"
     }
-    // console.log(startTime.value)
+    
     (validity===true)&&sendForm()
 }
 
@@ -42,7 +40,5 @@ function sendForm(){
     let formDataJsonString = JSON.stringify(formDataObject);
     console.log(formDataJsonString)
     form.reset()
-   
-  
 }
 
