@@ -112,7 +112,16 @@ textarea{
     justify-content: space-between;
     margin: 1% 0;
 }
+/* 
+input:invalid{
+    border: 1px solid red;
+} */
 
+#timeAlert{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
 #labelDateTime{
     color: #4593EC;
 }
@@ -139,4 +148,10 @@ textarea{
 
 #labelEndTime{
     font-weight: bold;
+}
+
+.invalid{
+    border-color: red;
+    border-radius: 3px;
+    border-width: 1px;
 }

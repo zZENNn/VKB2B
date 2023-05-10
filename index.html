@@ -16,7 +16,8 @@
                 <div class="block" id="upperFields">
                     <div class="select">
                         <label for="tower" id="labelTower">Башня
-                            <select name="tower">
+                            <select name="tower" class="field">
+                                <option  disabled selected value="">-</option>
                                 <option value="A">A</option>
                                 <option value="Б">Б</option>
                             </select>
@@ -24,7 +25,8 @@
                     </div>
                     <div class="select">
                         <label for="storey" id="labelStorey">Этаж
-                            <select name="storey" id = "selectStorey">
+                            <select name="storey" id = "selectStorey" class="field">
+                                <option  disabled selected value="">-</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
@@ -55,7 +57,8 @@
                     </div>
                     <div class="select">
                         <label for="room" id="labelRoom">Комната
-                            <select name="room">
+                            <select name="room" class="field">
+                                <option  disabled selected value="">-</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -74,13 +77,14 @@
                     <label id="labelDateTime">Дата и время бронирования</label>
                     <div class="timeWrapper">
                         <div id="c"><label class="datetimeRows" for="startTime" id="labelStartTime">с </label></div>
-                        <div><input type="datetime-local" id="startTime" name="startTime"></div>
+                        <div><input type="datetime-local" id="startTime" name="startTime" class="field"></div>
                     </div>
                     <div class="timeWrapper">
                         <div><label class="datetimeRows" for="endTime" id="labelEndTime">до</label></div>
-                        <div><input type="datetime-local" id="endTime" name="endTime"></div>   
+                        <div><input type="datetime-local" id="endTime" name="endTime" class="field"></div>
+                           
                     </div>    
-                    
+                    <span id="timeAlert">Время начала не может быть позже<br>времени окончания</span>
                 </div>
                 <div class="block" id="comment">
                     <label for="commentTextArea" id="labelComment">Комментарий:</label><br>
